@@ -11,7 +11,7 @@ blessings==1.7
 cachetools==5.3.3
 certifi==2024.2.2
 chardet==5.2.0
-charset-normalizer==3.3.2
+charset-normalizer==3.3.2ls
 click==8.1.7
 codecov==2.1.13
 colorama==0.4.6
