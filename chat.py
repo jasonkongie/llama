@@ -14,7 +14,8 @@ class Chat:
                 break
             
             response = self.generate_text_from_prompt(my_prompt)
-            print(response)
+            final_result = response["choices"][0]["text"].strip()
+            print(final_result)
 
         print("finished running..")
                 
@@ -49,7 +50,7 @@ class Chat:
 
 def main():
     # Initialize the Llama model with the specified path to the .gguf model file
-    model_path = "../output/model.gguf"
+    model_path = "../model/model.gguf"
     chat = Chat(model_path)
     chat.run()
 
